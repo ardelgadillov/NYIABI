@@ -6,7 +6,7 @@ import dash
 import pandas as pd
 from dash import html, dcc, callback, Input, Output, State
 
-dash.register_page(__name__, path='/', order=0)
+dash.register_page(__name__, path='/', icon='fas fa-home me-4', order=0)
 
 layout = html.Div([
     html.H1('Home page'),

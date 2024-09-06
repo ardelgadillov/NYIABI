@@ -1,7 +1,7 @@
 import dash
 from dash import html, callback, Input, Output, State, dash_table
 
-dash.register_page(__name__, order=1)
+dash.register_page(__name__, icon='fas fa-arrow-trend-up me-4', order=1)
 
 layout = html.Div([
     html.H1('Dataset page'),
@@ -20,6 +20,7 @@ def update_output_data_upload(data):
         # html.H6(datetime.datetime.fromtimestamp(date)),
         dash_table.DataTable(
             data,
+            export_format="csv",
             # df.to_dict('records'),
             # [{'name': i, 'id': i} for i in df.columns],
 

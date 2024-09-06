@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import json
 
-dash.register_page(__name__, order=2)
+dash.register_page(__name__, icon='fas fa-chart-column me-4', order=2)
 
 layout = html.Div([
     html.H1('Chart page'),

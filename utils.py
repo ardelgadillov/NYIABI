@@ -74,7 +74,7 @@ def sidebar(title):
                     dbc.NavLink([
                         html.Div([
                             html.I(className=page['icon']),
-                            page['name']
+                            html.Span(page['name'])
                         ])
                     ],
                         href=page['path'],

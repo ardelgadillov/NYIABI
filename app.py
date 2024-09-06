@@ -9,7 +9,7 @@ external_stylesheets = [dbc.themes.FLATLY, dbc.icons.FONT_AWESOME]
 app = Dash(__name__, use_pages=True, suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
 
 
-sidebar_app = sidebar('BI tool with Plotly')
+sidebar_app = sidebar('BI tool')
 content_app = content()
 
 app.layout = html.Div(

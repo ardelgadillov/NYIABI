@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 5rem;
+  width: 7rem; /*Modify the width*/
   padding: 2rem 1rem;
   background-color: #FFFFFF;
   z-index: 1050;
@@ -13,7 +13,7 @@
 
 /* when the user hovers on the sidebar, expand it */
 .sidebar:hover {
-  width: 18rem;
+  width: 12rem;
 }
 
 /* make sure the contents of the navlink don't wrap when navbar collapses */
@@ -39,7 +39,7 @@
 .sidebar:hover .nav-link span {
   visibility: visible;
   opacity: 1;
-  color: black;
+  /*color: black;*/
 }
 
 /* container for the sidebar header. make sure the contents don't wrap when
@@ -67,21 +67,36 @@
 }
 
 /* position the header relative to the logo and hide by default */
-.sidebar-header img {
+/*.sidebar-header img {
   opacity: 0;
   margin-left: 1rem;
   margin-bottom: 0;
   transition: opacity 0.1s ease-in-out;
-}
+}*/
 
 /* reveal the header when the sidebar is toggled */
-.sidebar:hover .sidebar-header img {
+/*.sidebar:hover .sidebar-header img {
   opacity: 1;
+}*/
+
+/* Sidebar container */
+.sidebar-header img {
+  width: 10rem !important;
+  height: auto !important;
+  opacity: 0 !important;
+  transition: none !important;
+}
+
+/* When the sidebar is hovered, adjust the logo size */
+.sidebar:hover .sidebar-header img {
+  width: 10rem !important; /* Set the width of the logo when sidebar is expanded */
+  height: auto !important; /* Maintain aspect ratio */
+  opacity: 1 !important; /* Make sure it's visible */
 }
 
 /* position the content relative to the collapsed sidebar */
 .content {
-  margin-left: 7rem;
+  margin-left: 8rem;
   margin-right: 2rem;
   padding: 2rem 1rem;
 }
